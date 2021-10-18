@@ -1,7 +1,8 @@
 import os, time
 from gpiozero import Button
 button = Button(2)
-cmd = '/root/toggle.sh'
+script_path = os.path.dirname(os.path.realpath(__file__))
+cmd = script_path + '/toggle.sh'
 while True:
   button.wait_for_press()
   print('You pushed me')

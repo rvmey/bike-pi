@@ -1,10 +1,12 @@
 #!/bin/bash
-pkill -f 'python3 /root/fancy.py'
-python3 ~/$1 $2
+SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+pkill -f 'python3 $SCRIPT_DIR/fancy.py'
+python3 $SCRIPT_DIR/$1 $2
 
 if [[ "$2" == "off" ]]; then
     echo "off" > ~/state.txt
 else
     echo "on" > ~/state.txt
-    echo "/root/killrun.sh $1 $2" > ~/laston.sh
+    echo "$SCRIPT_DIR/killrun.sh $SCRIPT_DIR/$1 $2" > ~/laston.sh
 fi

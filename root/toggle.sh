@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -xv
 STATE=$(cat ~/state.txt)
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 

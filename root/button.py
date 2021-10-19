@@ -7,6 +7,5 @@ while True:
   button.wait_for_press()
   print('You pushed me')
   subprocess.Popen([cmd])
-#  os.system(cmd)
 
-  time.sleep(1)
+  time.sleep(.5)

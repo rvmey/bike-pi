@@ -46,6 +46,6 @@ else
     echo -e "${PI_PASS}\n${PI_PASS}" | passwd pi
 fi
 
-python3 /root/bike-pi/root/button.py &
+python3 /root/bike-pi/button.py &
 
 exit 0

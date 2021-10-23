@@ -1,47 +1,47 @@
 [
     {
        "trigger":"White",
-       "command":"\/root\/bike-pi\/root\/killrun.sh leds.py white",
-       "offCommand": "\/root\/bike-pi\/root\/killrun.sh leds.py off",
+       "command":"\/root\/bike-pi\/killrun.sh leds.py white",
+       "offCommand": "\/root\/bike-pi\/killrun.sh leds.py off",
        "ground":"background",
        "voice":"white",
        "allowParams":"true"
     },
     {
        "trigger":"Green",
-       "command":"\/root\/bike-pi\/root\/killrun.sh leds.py green",
-       "offCommand": "\/root\/bike-pi\/root\/killrun.sh leds.py off",
+       "command":"\/root\/bike-pi\/killrun.sh leds.py green",
+       "offCommand": "\/root\/bike-pi\/killrun.sh leds.py off",
        "ground":"background",
        "voice":"green",
        "allowParams":"true"
     },
     {
        "trigger":"Blue",
-       "command":"\/root\/bike-pi\/root\/killrun.sh leds.py blue",
-       "offCommand": "\/root\/bike-pi\/root\/killrun.sh leds.py off",
+       "command":"\/root\/bike-pi\/killrun.sh leds.py blue",
+       "offCommand": "\/root\/bike-pi\/killrun.sh leds.py off",
        "ground":"background",
        "voice":"blue",
        "allowParams":"true"
     },
     {
        "trigger":"Red",
-       "command":"\/root\/bike-pi\/root\/killrun.sh leds.py red",
-       "offCommand": "\/root\/bike-pi\/root\/killrun.sh leds.py off",
+       "command":"\/root\/bike-pi\/killrun.sh leds.py red",
+       "offCommand": "\/root\/bike-pi\/killrun.sh leds.py off",
        "ground":"background",
        "voice":"red",
        "allowParams":"true"
     },
     {
        "trigger":"Fancy",
-       "command":"\/root\/bike-pi\/root\/killrun.sh fancy.py",
-       "offCommand": "\/root\/bike-pi\/root\/killrun.sh leds.py off",
+       "command":"\/root\/bike-pi\/killrun.sh fancy.py",
+       "offCommand": "\/root\/bike-pi\/killrun.sh leds.py off",
        "ground":"background",
        "voice":"fancy",
        "allowParams":"true"
     },
     {
        "trigger":"Off",
-       "command":"\/root\/bike-pi\/root\/killrun.sh leds.py off",
+       "command":"\/root\/bike-pi\/killrun.sh leds.py off",
        "ground":"background",
        "voice":"off"
     }

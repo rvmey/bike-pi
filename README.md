@@ -21,3 +21,5 @@ cp ~/bike-pi/etc/rc.local /etc/rc.local
 cp ~/bike-pi/root/.TRIGGERcmdData/commands.json ~/.TRIGGERcmdData/commands.json 
 reboot
 ```
+
+Note: At this point, the Raspberry Pi should reboot, and the commands in the rc.local script will run.  That will install the agent and add a computer to your account, so make sure your account is either subscribed or it doesn't have a computer in it already.  Only subscribed accounts can have more than one computer.  

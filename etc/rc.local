@@ -26,8 +26,6 @@ else
         echo Waiting 5 seconds before trying again.
         sleep 5
     done
-    export PI_PASS=$(cat /root/pipass)
-    rm /root/pipass
     export TCMD_TOKEN=$(cat /root/token.tkn)
     rm /root/token.tkn
     echo Creating computer and installing token.
@@ -42,8 +40,6 @@ else
     chmod +x /usr/local/bin/tcmd
     echo Installing gpio command line tool.
     apt-get install wiringpi
-    export PI_PASS="${PI_PASS//[[:space:]]/}"
-    echo -e "${PI_PASS}\n${PI_PASS}" | passwd pi
 fi
 
 python3 /root/bike-pi/button.py &

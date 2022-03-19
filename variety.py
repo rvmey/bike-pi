@@ -5,7 +5,6 @@
 import time
 import board
 import neopixel
-import sys
 
 
 # Choose an open pin connected to the Data In of the NeoPixel strip, i.e. board.D18
@@ -54,15 +53,27 @@ def rainbow_cycle(wait):
         pixels.show()
         time.sleep(wait)
 
-arg1 = sys.argv[1] if len(sys.argv) >= 2 else 'medium'
-delay = 0.001
-if(arg1 == 'fast'):
-  delay = 0
-if(arg1 == 'medium'):
-  delay = 0.01
-if(arg1 == 'slow'):
-  delay = 0.1
-print(delay)
+
 while True:
-    # rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step
-    rainbow_cycle(delay)  
+    # Comment this line out if you have RGBW/GRBW NeoPixels
+    pixels.fill((255, 0, 0))
+    # Uncomment this line if you have RGBW/GRBW NeoPixels
+    # pixels.fill((255, 0, 0, 0))
+    pixels.show()
+    time.sleep(1)
+
+    # Comment this line out if you have RGBW/GRBW NeoPixels
+    pixels.fill((0, 255, 0))
+    # Uncomment this line if you have RGBW/GRBW NeoPixels
+    # pixels.fill((0, 255, 0, 0))
+    pixels.show()
+    time.sleep(1)
+
+    # Comment this line out if you have RGBW/GRBW NeoPixels
+    pixels.fill((0, 0, 255))
+    # Uncomment this line if you have RGBW/GRBW NeoPixels
+    # pixels.fill((0, 0, 255, 0))
+    pixels.show()
+    time.sleep(1)
+
+    rainbow_cycle(0.001)  # rainbow cycle with 1ms delay per step

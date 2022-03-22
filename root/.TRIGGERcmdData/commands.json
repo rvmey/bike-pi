@@ -1,5 +1,13 @@
 [
     {
+       "trigger":"Light",
+       "command":"\/root\/bike-pi\/smartbulb.sh",
+       "offCommand": "\/root\/bike-pi\/killrun.sh leds.py off",
+       "ground":"background",
+       "voice":"light",
+       "allowParams":"true"
+    },
+    {
        "trigger":"White",
        "command":"\/root\/bike-pi\/killrun.sh leds.py white",
        "offCommand": "\/root\/bike-pi\/killrun.sh leds.py off",
@@ -44,5 +52,23 @@
        "command":"\/root\/bike-pi\/killrun.sh leds.py off",
        "ground":"background",
        "voice":"off"
-    }
+    },
+    {
+       "trigger":"color",
+       "command":"\/root\/bike-pi\/smartbulb.sh",
+       "offCommand": "\/root\/bike-pi\/killrun.sh leds.py off",
+       "ground":"background",
+       "voice":"color",
+       "allowParams":"true"
+    },
+ {
+  "trigger": "blister",
+  "command": "mpg321 -a default:CARD=Headphones -g 1000 \/home\/pi\/\/music\/Violent\\ Femmes/Violent\\ Femmes/01-Blister\\ in\\ the\\ Sun.mp3",
+  "offCommand": "pkill mpg321",
+  "ground": "background",
+  "voice": "blister",
+  "voiceReply": "",
+  "allowParams": "true"
+ }
+
 ]

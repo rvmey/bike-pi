@@ -11,7 +11,7 @@ import neopixel
 # Update this to match the pin to which you connected the NeoPixels
 pixel_pin = board.D18
 # Update this to match the number of NeoPixels connected
-num_pixels = 30
+num_pixels = int(os.getenv('NUM_LEDS', '30'))
 
 pixels = neopixel.NeoPixel(pixel_pin, num_pixels, auto_write=False)
 # Set to 0-1 to change the brightness of the NeoPixels

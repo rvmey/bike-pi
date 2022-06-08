@@ -1,6 +1,6 @@
 #!/bin/bash
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-LEDS=300
+NUM_LEDS=300
 
 if [[ "$2" == "off" ]]; then
     echo "off" > ~/state.txt

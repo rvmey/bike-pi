@@ -12,7 +12,8 @@ try:
 except ImportError:
     import random
 
-numpix = 30  # Number of NeoPixels
+numpix = int(os.getenv('NUM_LEDS', '30'))
+0  # Number of NeoPixels
 pixpin = board.D18  # Pin where NeoPixels are connected
 strip = neopixel.NeoPixel(pixpin, numpix, brightness=1, auto_write=True)
 colors = [

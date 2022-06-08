@@ -47,12 +47,12 @@ def wheel(pos):
 
 
 def rainbow_cycle(wait):
-    for j in range(255):
-        for i in range(num_pixels):
-            pixel_index = (i * 256 // num_pixels) + j
-            pixels[i] = wheel(pixel_index & 255)
-        pixels.show()
-        time.sleep(wait)
+    pixels.show()
+    for x in range(0,num_pixels):
+      pixels.setPixelColor(x,255)
+    time.sleep(wait)
+    for x in range(0,num_pixels):
+      pixels.setPixelColor(x,0)
 
 arg1 = sys.argv[1] if len(sys.argv) >= 2 else 'medium'
 delay = 0.001

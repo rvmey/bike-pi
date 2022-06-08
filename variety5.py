@@ -7,6 +7,7 @@ import time
 import board
 from rainbowio import colorwheel
 import neopixel
+import os
 
 # Update this to match the pin to which you connected the NeoPixels
 pixel_pin = board.D18

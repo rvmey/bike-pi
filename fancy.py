@@ -5,7 +5,7 @@
 import time
 import board
 import neopixel
-import sys
+import sys, os
 
 
 # Choose an open pin connected to the Data In of the NeoPixel strip, i.e. board.D18

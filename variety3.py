@@ -6,6 +6,7 @@ import time
 
 import board
 import neopixel
+import os
 
 try:
     import urandom as random

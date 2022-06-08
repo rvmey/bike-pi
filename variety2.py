@@ -7,6 +7,7 @@ import time
 import board
 from rainbowio import colorwheel
 import neopixel
+import os
 
 pixel_pin = board.D18
 num_pixels = int(os.getenv('NUM_LEDS', '30'))

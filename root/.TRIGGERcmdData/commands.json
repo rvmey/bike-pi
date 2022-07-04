@@ -48,6 +48,14 @@
        "allowParams":"true"
     },
     {
+       "trigger":"Variety",
+       "command":"\/root\/bike-pi\/variety.sh",
+       "offCommand": "\/root\/bike-pi\/killrun.sh leds.py off",
+       "ground":"background",
+       "voice":"variety",
+       "allowParams":"true"
+    },
+    {
        "trigger":"Off",
        "command":"\/root\/bike-pi\/killrun.sh leds.py off",
        "ground":"background",
@@ -59,6 +67,13 @@
        "offCommand": "\/root\/bike-pi\/killrun.sh leds.py off",
        "ground":"background",
        "voice":"color",
+       "allowParams":"true"
+    },
+    {
+       "trigger":"power",
+       "command":"\/root\/bike-pi\/power.sh",
+       "ground":"background",
+       "voice":"power",
        "allowParams":"true"
     },
  {

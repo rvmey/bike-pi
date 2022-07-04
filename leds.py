@@ -1,4 +1,4 @@
-import sys
+import sys, os
 from rpi_ws281x import *
 
 if len(sys.argv) > 1:
@@ -24,7 +24,7 @@ else:
     color = Color(255,255,255) # white
 
 # LED strip configuration:
-LED_COUNT      = 300      # Number of LED pixels.
+LED_COUNT      = int(os.getenv('NUM_LEDS', '30'))      # Number of LED pixels.
 LED_PIN        = 18      # GPIO pin connected to the pixels (18 uses PWM!).
 #LED_PIN        = 10      # GPIO pin connected to the pixels (10 uses SPI /dev/spidev0.0).
 LED_FREQ_HZ    = 800000  # LED signal frequency in hertz (usually 800khz)

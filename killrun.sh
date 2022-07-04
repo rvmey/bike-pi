@@ -1,6 +1,6 @@
 #!/bin/bash
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-export NUM_LEDS=150
+export NUM_LEDS=$(cat ~/numleds.txt)
 
 if [[ "$2" == "off" ]]; then
     echo "off" > ~/state.txt

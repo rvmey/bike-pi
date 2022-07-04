@@ -76,6 +76,27 @@
        "voice":"power",
        "allowParams":"true"
     },
+    {
+      "trigger":"15 leds",
+      "command":"/root/bike-pi/numleds.sh 15",
+      "ground":"background",
+      "voice":"fifteen",
+      "allowParams":"false"
+   },
+   {
+      "trigger":"150 leds",
+      "command":"/root/bike-pi/numleds.sh 150",
+      "ground":"background",
+      "voice":"one fifty",
+      "allowParams":"false"
+   },
+   {
+      "trigger":"set number of leds",
+      "command":"/root/bike-pi/numleds.sh",
+      "ground":"background",
+      "voice":"",
+      "allowParams":"true"
+   },
  {
   "trigger": "blister",
   "command": "mpg321 -a default:CARD=Headphones -g 1000 \/home\/pi\/\/music\/Violent\\ Femmes/Violent\\ Femmes/01-Blister\\ in\\ the\\ Sun.mp3",

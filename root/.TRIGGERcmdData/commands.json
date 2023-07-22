@@ -56,6 +56,14 @@
        "allowParams":"true"
     },
     {
+       "trigger":"Purple Chase",
+       "command":"\/root\/bike-pi\/killrun.sh purplechase.py",
+       "offCommand": "\/root\/bike-pi\/killrun.sh leds.py off",
+       "ground":"background",
+       "voice":"variety",
+       "allowParams":"true"
+    },
+    {
        "trigger":"Off",
        "command":"\/root\/bike-pi\/killrun.sh leds.py off",
        "ground":"background",

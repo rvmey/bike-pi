@@ -10,6 +10,7 @@ else
 fi
 
 pkill -f "python3 $SCRIPT_DIR/fancy.py"
+pkill -f "python3 $SCRIPT_DIR/purplechase.py"
 pkill -f "python3 $SCRIPT_DIR/variety1.py"
 pkill -f "python3 $SCRIPT_DIR/variety2.py"
 pkill -f "python3 $SCRIPT_DIR/variety3.py"

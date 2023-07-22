@@ -1,4 +1,4 @@
-import sys, os
+import sys, os, time
 from rpi_ws281x import *
 
 if len(sys.argv) > 1:
@@ -36,7 +36,10 @@ LED_CHANNEL    = 0       # set to '1' for GPIOs 13, 19, 41, 45 or 53
 strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ,LED_DMA,LED_INVERT,LED_BRIGHTNESS,LED_CHANNEL)
 strip.begin()
 
-for x in range(0,LED_COUNT):
+while True:
+  for x in range(0,LED_COUNT):
     strip.setPixelColor(x,color)
 
-strip.show()
+  strip.show()
+
+  time.sleep(1)

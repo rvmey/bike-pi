@@ -99,6 +99,13 @@
       "allowParams":"false"
    },
    {
+      "trigger":"Get IP",
+      "command":"/root/bike-pi/get_ip.sh",
+      "ground":"background",
+      "voice":"",
+      "allowParams":"true"
+   },
+   {
       "trigger":"set number of leds",
       "command":"/root/bike-pi/numleds.sh",
       "ground":"background",
